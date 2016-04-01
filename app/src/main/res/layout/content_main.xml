@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="fr.jeremiegarcia.metaosc.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:foregroundTint="@android:color/holo_blue_dark"
+    android:clickable="true"
+    style="@style/AppTheme">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meta1 (Green)"
+                android:id="@+id/meta1Led"
+                android:checked="false"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:clickable="false"
+                android:buttonTint="@android:color/holo_green_dark" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/meta1Battery"
+                android:textColor="@android:color/holo_green_dark"
+                android:text="    " />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meta2 (Blue)"
+                android:id="@+id/meta2Led"
+                android:checked="false"
+                android:enabled="true"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_below="@+id/meta1Led"
+                android:layout_alignParentStart="true"
+                android:clickable="false"
+                android:buttonTint="@android:color/holo_blue_dark" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/meta2Battery"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="   " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="IP:"
+                android:id="@+id/textView" />
+
+            <EditText
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/oscIp"
+                android:text="127.0.0.1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Port:"
+                android:id="@+id/textView2" />
+
+            <EditText
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/oscPort"
+                android:text="1234" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="fill_parent" />
+
+            <Button
+                style="@style/Base.Widget.AppCompat.ImageButton"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="/hello"
+                android:id="@+id/oscHello"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Sensor"
+                    android:id="@+id/textView3"
+                    android:layout_column="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Meta1"
+                    android:id="@+id/textView4"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Meta2"
+                    android:id="@+id/textView5"
+                    android:layout_column="2" />
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/background_dark">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:layout_gravity="top"
+                    android:background="@android:color/background_dark"></TableRow>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="/swi"
+                    android:id="@+id/textView13"
+                    android:layout_column="0" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New ToggleButton"
+                    android:id="@+id/meta1Swi"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:background="@color/colorPrimary" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On"
+                    android:id="@+id/meta2Swi"
+                    android:layout_column="2"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@color/colorPrimary" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:layout_gravity="top"
+                    android:background="@android:color/background_dark" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="/acc"
+                    android:id="@+id/textView6"
+                    android:layout_column="0" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New ToggleButton"
+                    android:id="@+id/meta1Acc"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:background="@color/colorPrimary" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On"
+                    android:id="@+id/meta2Acc"
+                    android:layout_column="2"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@color/colorPrimary" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:layout_gravity="top"
+                    android:background="@android:color/background_dark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="/gyr"
+                    android:id="@+id/textView7"
+                    android:layout_column="0" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New ToggleButton"
+                    android:id="@+id/meta1Gyr"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:background="@color/colorPrimary" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On"
+                    android:id="@+id/meta2Gyr"
+                    android:layout_column="2"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@color/colorPrimary" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:layout_gravity="top"
+                    android:background="@android:color/background_dark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="/mag"
+                    android:id="@+id/textView8"
+                    android:layout_column="0" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New ToggleButton"
+                    android:id="@+id/meta1Mag"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:background="@color/colorPrimary" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On"
+                    android:id="@+id/meta2Mag"
+                    android:layout_column="2"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@color/colorPrimary" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:layout_gravity="top"
+                    android:background="@android:color/background_dark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="/lig"
+                    android:id="@+id/textView9"
+                    android:layout_column="0" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New ToggleButton"
+                    android:id="@+id/meta1Lig"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:background="@color/colorPrimary" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On"
+                    android:id="@+id/meta2Lig"
+                    android:layout_column="2"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@color/colorPrimary" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:layout_gravity="top"
+                    android:background="@android:color/background_dark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="/tmp"
+                    android:id="@+id/textView10"
+                    android:layout_column="0" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New ToggleButton"
+                    android:id="@+id/meta1Tmp"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:background="@color/colorPrimary" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On"
+                    android:id="@+id/meta2Tmp"
+                    android:layout_column="2"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@color/colorPrimary" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:layout_gravity="top"
+                    android:background="@android:color/background_dark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="/bar"
+                    android:id="@+id/textView11"
+                    android:layout_column="0" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New ToggleButton"
+                    android:id="@+id/meta1Bar"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:background="@color/colorPrimary" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On"
+                    android:id="@+id/meta2Bar"
+                    android:layout_column="2"
+                    android:checked="false"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@color/colorPrimary" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_column="0"
+                    android:layout_span="3"
+                    android:layout_gravity="top"
+                    android:background="@android:color/background_dark" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
