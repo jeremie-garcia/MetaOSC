@@ -76,9 +76,11 @@ public class Sensor2OSCConnectionStateHandler extends MetaWearBoard.ConnectionSt
         this.mainActivity = activity;
     }
 
+    int restart = 1;
+    int maxRestart = 10;
     @Override
     public void connected() {
-
+        restart = 1;
         oscMessage = new OSCMessage(getRootOSCAddress());
         oscMessage.addArgument(STATUS);
         oscMessage.addArgument(1);
@@ -93,6 +95,44 @@ public class Sensor2OSCConnectionStateHandler extends MetaWearBoard.ConnectionSt
                 mainActivity.updateBoardStatus(boadId, true);
             }
         });
+    }
+
+    @Override
+    public void disconnected() {
+        oscMessage = new OSCMessage(getRootOSCAddress());
+        oscMessage.addArgument("status");
+        oscMessage.addArgument(0);
+        OSCManager.sendOscMessage(oscMessage);
+        Log.i("Board " + this.id, "Connection Lost");
+        final int boadId = this.id;
+        mainActivity.runOnUiThread(new Runnable() {
+            public void run() {
+                mainActivity.updateBoardStatus(boadId, false);
+            }
+        });
+    }
+
+    @Override
+    public void failure(int status, Throwable error) {
+        Log.e("Board " + this.id, "Error connecting " + status, error);
+        if(restart<=maxRestart){
+            Log.i("Board " + this.id, "Reconnecting attempt " + restart);
+            mwBoard.connect();
+            restart ++;
+            final int boadId = this.id;
+            mainActivity.runOnUiThread(new Runnable() {
+                public void run() {
+                    mainActivity.updateBoardStatus(boadId, false);
+                }
+            });
+
+        }else{
+            AlertDialog alertDialog = new AlertDialog.Builder(mainActivity).create();
+            alertDialog.setTitle("Board Connection Problem");
+            alertDialog.setMessage("Cannot connect to Board: " + this.id + " after " + maxRestart + " attempts\n" +
+                    "Check if the board is connected or change the battery and restart the app!");
+            alertDialog.show();
+        }
     }
 
     private void setButtonColor(final View btnView, final boolean isDark){
@@ -130,7 +170,7 @@ public class Sensor2OSCConnectionStateHandler extends MetaWearBoard.ConnectionSt
     private void initSwitchModule() {
         //switch
         try {
-           switchModule = mwBoard.getModule(Switch.class);
+            switchModule = mwBoard.getModule(Switch.class);
             Log.i("Board " + this.id, "Switch Module found");
 
             mainActivity.runOnUiThread(new Runnable() {
@@ -139,26 +179,26 @@ public class Sensor2OSCConnectionStateHandler extends MetaWearBoard.ConnectionSt
                     btn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                         @Override
                         public void onCheckedChanged(CompoundButton buttonView, final boolean isChecked) {
-                                switchModule.routeData().fromSensor().stream("swi_stream_key").commit().onComplete(new AsyncOperation.CompletionHandler<RouteManager>() {
-                                    @Override
-                                    public void success(RouteManager result) {
-                                        result.subscribe("swi_stream_key", new RouteManager.MessageHandler() {
+                            switchModule.routeData().fromSensor().stream("swi_stream_key").commit().onComplete(new AsyncOperation.CompletionHandler<RouteManager>() {
+                                @Override
+                                public void success(RouteManager result) {
+                                    result.subscribe("swi_stream_key", new RouteManager.MessageHandler() {
 
-                                            OSCMessage mess = new OSCMessage();
+                                        OSCMessage mess = new OSCMessage();
 
-                                            @Override
-                                            public void process(Message message) {
-                                                if(isChecked) {
-                                                    mess = new OSCMessage();
-                                                    mess.setAddress(getRootOSCAddress());
-                                                    mess.addArgument(SWI);
-                                                    mess.addArgument(message.getData(Boolean.class) ? 1 : 0);
-                                                    OSCManager.sendOscMessage(mess);
-                                                }
+                                        @Override
+                                        public void process(Message message) {
+                                            if(isChecked) {
+                                                mess = new OSCMessage();
+                                                mess.setAddress(getRootOSCAddress());
+                                                mess.addArgument(SWI);
+                                                mess.addArgument(message.getData(Boolean.class) ? 1 : 0);
+                                                OSCManager.sendOscMessage(mess);
                                             }
-                                        });
-                                    }
-                                });
+                                        }
+                                    });
+                                }
+                            });
                             setButtonColor(buttonView, isChecked);
                         }
                     });
@@ -574,7 +614,7 @@ public class Sensor2OSCConnectionStateHandler extends MetaWearBoard.ConnectionSt
                     .setRepeatCount((byte) (INIT_BLINK_TIME / 200)).setHighTime((short) 100)
                     .setHighIntensity((byte) 31).setLowIntensity((byte) 0)
                     .commit();
-           ledModule.play(true);
+            ledModule.play(true);
 
         } catch (UnsupportedModuleException e) {
             Log.e("Board " + this.id, "LED not supported");
@@ -609,46 +649,6 @@ public class Sensor2OSCConnectionStateHandler extends MetaWearBoard.ConnectionSt
                 settings();
             }
         }, 1000 * 60 * 5); //every 5 minutes
-    }
-
-    @Override
-    public void disconnected() {
-        oscMessage = new OSCMessage(getRootOSCAddress());
-        oscMessage.addArgument("status");
-        oscMessage.addArgument(0);
-        OSCManager.sendOscMessage(oscMessage);
-        Log.i("Board " + this.id, "Connection Lost");
-        final int boadId = this.id;
-        mainActivity.runOnUiThread(new Runnable() {
-            public void run() {
-                mainActivity.updateBoardStatus(boadId, false);
-            }
-        });
-    }
-
-    int restart = 1;
-    int maxRestart = 10;
-    @Override
-    public void failure(int status, Throwable error) {
-        Log.e("Board " + this.id, "Error connecting " + status, error);
-        if(restart<=maxRestart){
-            Log.i("Board " + this.id, "Reconnecting attempt " + restart);
-            mwBoard.connect();
-            restart ++;
-            final int boadId = this.id;
-            mainActivity.runOnUiThread(new Runnable() {
-                public void run() {
-                    mainActivity.updateBoardStatus(boadId, false);
-                }
-            });
-
-        }else{
-            AlertDialog alertDialog = new AlertDialog.Builder(mainActivity).create();
-            alertDialog.setTitle("Board Connection Problem");
-            alertDialog.setMessage("Cannot connect to Board: " + this.id + " after " + maxRestart + " attempts\n" +
-                    "Check if the board is connected or change the battery and restart the app!");
-            alertDialog.show();
-        }
     }
 
     public String getRootOSCAddress(){

@@ -168,8 +168,6 @@ public class MainActivity extends AppCompatActivity implements ServiceConnection
         savePreferences();
     }
 
-
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -343,5 +341,4 @@ public class MainActivity extends AppCompatActivity implements ServiceConnection
         ((EditText) findViewById(R.id.oscPort)).setText(Integer.toString(port));
         OSCManager.setPort(port);
     }
-
 }

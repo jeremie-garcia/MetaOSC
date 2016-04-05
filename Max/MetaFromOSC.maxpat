@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -117.0, -919.0, 1022.0, 524.0 ],
+		"rect" : [ -117.0, -919.0, 1048.0, 524.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -145,7 +145,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 670.0, 487.0, 24.0, 24.0 ],
+					"patching_rect" : [ 670.0, 488.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -920,10 +920,6 @@
 
 			}
  ],
-		"parameters" : 		{
-
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "OSC-route.mxo",
 				"type" : "iLaX"
