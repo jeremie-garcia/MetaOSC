@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 1,
 			"revision" : 0,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -137,7 +137,7 @@
 							"major" : 7,
 							"minor" : 1,
 							"revision" : 0,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -270,7 +270,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -346,7 +346,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -713,14 +713,9 @@
 													"linecount" : 3,
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 73.0, 432.0, 90.0, 47.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 1
-													}
-,
 													"style" : "",
 													"text" : "mnm.mean @dim stream @filtersize 10"
 												}
@@ -1205,7 +1200,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -1251,7 +1246,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -1378,14 +1373,9 @@
 																	"fontsize" : 12.0,
 																	"id" : "obj-8",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 0,
 																	"numoutlets" : 0,
 																	"patching_rect" : [ -259.952759, 627.0, 54.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "ftm.print"
 																}
@@ -1512,7 +1502,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -1679,12 +1669,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-29",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 311.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 311.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[2]))" ]
+																	"text" : "_(abs ($1[2]))"
 																}
 
 															}
@@ -1809,12 +1799,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-21",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 195.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 195.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[1]))" ]
+																	"text" : "_(abs ($1[1]))"
 																}
 
 															}
@@ -1831,12 +1821,11 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-11",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
 																	"patching_rect" : [ 423.0, 364.0, 163.353516, 17.40625 ],
 																	"presentation_rect" : [ 423.0, 364.0, 163.353516, 17.40625 ],
-																	"text" : [ "_((sqrt (($1 sqrabs) sum )) / 3.)" ]
+																	"text" : "_((sqrt (($1 sqrabs) sum )) / 3.)"
 																}
 
 															}
@@ -2006,12 +1995,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-14",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 73.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 73.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[0]))" ]
+																	"text" : "_(abs ($1[0]))"
 																}
 
 															}
@@ -2382,7 +2371,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -2549,12 +2538,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-29",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 311.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 311.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[2]))" ]
+																	"text" : "_(abs ($1[2]))"
 																}
 
 															}
@@ -2679,12 +2668,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-21",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 195.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 195.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[1]))" ]
+																	"text" : "_(abs ($1[1]))"
 																}
 
 															}
@@ -2701,12 +2690,11 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-11",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
 																	"patching_rect" : [ 423.0, 364.0, 163.353516, 17.40625 ],
 																	"presentation_rect" : [ 423.0, 364.0, 163.353516, 17.40625 ],
-																	"text" : [ "_((sqrt (($1 sqrabs) sum )) / 3.)" ]
+																	"text" : "_((sqrt (($1 sqrabs) sum )) / 3.)"
 																}
 
 															}
@@ -2876,12 +2864,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-14",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 73.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 73.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[0]))" ]
+																	"text" : "_(abs ($1[0]))"
 																}
 
 															}
@@ -3252,7 +3240,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -3341,14 +3329,9 @@
 																	"id" : "obj-11",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 3,
-																	"outlettype" : [ "", "", "" ],
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
 																	"patching_rect" : [ 65.0, 184.0, 57.0, 18.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.delta"
 																}
@@ -3469,7 +3452,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -3525,11 +3508,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 166.0, 294.0, 45.0, 22.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "ftm.list"
 																}
@@ -3576,12 +3554,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-14",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 3,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 73.0, 193.0, 66.691406, 18.0 ],
 																	"presentation_rect" : [ 73.0, 193.0, 66.691406, 17.40625 ],
-																	"text" : [ "_($1 mul $2)" ]
+																	"text" : "_($1 mul $2)"
 																}
 
 															}
@@ -3788,7 +3766,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -3877,14 +3855,9 @@
 																	"id" : "obj-11",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 3,
-																	"outlettype" : [ "", "", "" ],
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
 																	"patching_rect" : [ 65.0, 184.0, 57.0, 18.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.delta"
 																}
@@ -3993,7 +3966,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -4120,14 +4093,9 @@
 																	"fontsize" : 12.0,
 																	"id" : "obj-8",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 0,
 																	"numoutlets" : 0,
 																	"patching_rect" : [ -259.952759, 627.0, 54.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "ftm.print"
 																}
@@ -4310,12 +4278,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-71",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 373.0, 107.0, 48.807617, 17.0 ],
 													"presentation_rect" : [ 373.0, 107.0, 48.807617, 16.289062 ],
-													"text" : [ "_mode $1" ]
+													"text" : "_mode $1"
 												}
 
 											}
@@ -4385,11 +4353,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 219.0, 167.0, 240.0, 21.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "mnm.biqoefs @mode lowpass @f0 0.02 @q 1."
 												}
@@ -4423,12 +4386,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-64",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 279.0, 107.0, 27.40918, 17.0 ],
 													"presentation_rect" : [ 279.0, 107.0, 27.40918, 16.289062 ],
-													"text" : [ "_q $1" ]
+													"text" : "_q $1"
 												}
 
 											}
@@ -4490,12 +4453,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-69",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 279.0, 195.0, 29.842285, 17.0 ],
 													"presentation_rect" : [ 279.0, 195.0, 29.842285, 16.289062 ],
-													"text" : [ "_clear" ]
+													"text" : "_clear"
 												}
 
 											}
@@ -4512,12 +4475,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-70",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 219.0, 195.0, 47.583008, 17.0 ],
 													"presentation_rect" : [ 219.0, 195.0, 47.583008, 16.289062 ],
-													"text" : [ "_coefs $1" ]
+													"text" : "_coefs $1"
 												}
 
 											}
@@ -4534,12 +4497,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-72",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 219.0, 107.0, 30.46533, 17.0 ],
 													"presentation_rect" : [ 219.0, 107.0, 30.46533, 16.289062 ],
-													"text" : [ "_f0 $1" ]
+													"text" : "_f0 $1"
 												}
 
 											}
@@ -4565,14 +4528,9 @@
 													"id" : "obj-74",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 171.0, 235.0, 204.0, 21.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "mnm.biquad @dim stream"
 												}
@@ -4900,7 +4858,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -5531,7 +5489,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -5715,15 +5673,10 @@
 													"fontsize" : 12.0,
 													"id" : "obj-5",
 													"maxclass" : "newobj",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 73.0, 143.0, 81.0, 20.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "ftm.copy fvec"
 												}
@@ -5739,11 +5692,6 @@
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "", "" ],
 													"patching_rect" : [ 73.0, 185.0, 194.0, 20.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "mnm.minmax"
 												}
@@ -5988,7 +5936,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -6385,7 +6333,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -6747,7 +6695,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -7110,7 +7058,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -7184,12 +7132,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-1",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 126.0, 212.0, 132.017578, 17.40625 ],
 													"presentation_rect" : [ 126.0, 212.0, 132.017578, 17.40625 ],
-													"text" : [ "_(sqrt (($1 sqrabs) sum))" ]
+													"text" : "_(sqrt (($1 sqrabs) sum))"
 												}
 
 											}
@@ -7218,12 +7166,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-69",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 201.399963, 173.0, 132.017578, 17.40625 ],
 													"presentation_rect" : [ 201.399963, 173.0, 132.017578, 17.40625 ],
-													"text" : [ "_(sqrt (($1 sqrabs) sum))" ]
+													"text" : "_(sqrt (($1 sqrabs) sum))"
 												}
 
 											}
@@ -7234,14 +7182,9 @@
 													"id" : "obj-70",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 3,
-													"outlettype" : [ "", "", "" ],
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 126.0, 137.0, 169.799927, 20.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "mnm.delta"
 												}
@@ -7420,7 +7363,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -7543,12 +7486,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-14",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 109.0, 162.0, 132.017578, 17.40625 ],
 													"presentation_rect" : [ 109.0, 162.0, 132.017578, 17.40625 ],
-													"text" : [ "_(sqrt (($1 sqrabs) sum))" ]
+													"text" : "_(sqrt (($1 sqrabs) sum))"
 												}
 
 											}
@@ -7558,15 +7501,10 @@
 													"fontsize" : 12.0,
 													"id" : "obj-68",
 													"maxclass" : "newobj",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 109.0, 124.0, 81.0, 20.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "ftm.copy fmat"
 												}
@@ -7881,7 +7819,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -7933,15 +7871,10 @@
 													"fontsize" : 12.0,
 													"id" : "obj-7",
 													"maxclass" : "newobj",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 73.0, 142.0, 83.0, 20.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "ftm.copy fmat"
 												}
@@ -7960,12 +7893,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-8",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 73.0, 184.0, 132.017578, 17.40625 ],
 													"presentation_rect" : [ 73.0, 184.0, 132.017578, 17.40625 ],
-													"text" : [ "_(sqrt (($1 sqrabs) sum))" ]
+													"text" : "_(sqrt (($1 sqrabs) sum))"
 												}
 
 											}
@@ -8108,7 +8041,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -8244,7 +8177,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -8373,14 +8306,9 @@
 																	"id" : "obj-36",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 795.0, 90.0, 314.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.mean @filtersize 2 @dim stream @outtype number"
 																}
@@ -8563,14 +8491,9 @@
 																	"id" : "obj-23",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 450.0, 90.0, 314.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.mean @filtersize 2 @dim stream @outtype number"
 																}
@@ -8774,12 +8697,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-21",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 960.0, 435.0, 60.703125, 17.40625 ],
 																	"presentation_rect" : [ 960.0, 435.0, 60.703125, 17.40625 ],
-																	"text" : [ "_size 200 3" ]
+																	"text" : "_size 200 3"
 																}
 
 															}
@@ -8789,9 +8712,8 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-19",
 																	"maxclass" : "ftm.vecdisplay",
-																	"numinlets" : 5,
-																	"numoutlets" : 6,
-																	"outlettype" : [ "", "", "", "", "", "" ],
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
 																	"patching_rect" : [ 960.0, 555.0, 256.0, 128.0 ]
 																}
 
@@ -8809,18 +8731,17 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-10",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 960.0, 495.0, 246.527328, 17.40625 ],
 																	"presentation_rect" : [ 960.0, 495.0, 246.527328, 17.40625 ],
-																	"text" : [ "_((((($buffer set 0 0 $1) rotate -1) colref 0))/ 5.)" ]
+																	"text" : "_((((($buffer set 0 0 $1) rotate -1) colref 0))/ 5.)"
 																}
 
 															}
 , 															{
 																"box" : 																{
-																	"description" : "fmat 100 3",
 																	"editor_interface" : "",
 																	"fontface" : 0,
 																	"fontname" : "Arial",
@@ -8831,8 +8752,7 @@
 																	"maxclass" : "ftm.object",
 																	"name" : "buffer9",
 																	"numinlets" : 1,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"numoutlets" : 0,
 																	"patching_rect" : [ 960.0, 465.0, 114.962891, 19.40625 ],
 																	"persistence" : 0,
 																	"presentation_rect" : [ 960.0, 465.0, 114.962891, 19.40625 ],
@@ -8848,14 +8768,9 @@
 																	"id" : "obj-18",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 75.0, 90.0, 314.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.mean @filtersize 2 @dim stream @outtype number"
 																}
@@ -9681,7 +9596,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -9735,11 +9650,6 @@
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
 																	"patching_rect" : [ 50.0, 212.0, 149.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.meanstd @type list"
 																}
@@ -9994,7 +9904,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -10297,14 +10207,9 @@
 																	"id" : "obj-63",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 148.0, 167.0, 224.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.median @filtersize 8 @dim stream"
 																}
@@ -11543,7 +11448,7 @@
 							"major" : 7,
 							"minor" : 1,
 							"revision" : 0,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -11676,7 +11581,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -11752,7 +11657,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -12119,14 +12024,9 @@
 													"linecount" : 3,
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 73.0, 432.0, 90.0, 47.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "mnm.mean @dim stream @filtersize 10"
 												}
@@ -12611,7 +12511,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -12657,7 +12557,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -12784,14 +12684,9 @@
 																	"fontsize" : 12.0,
 																	"id" : "obj-8",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 0,
 																	"numoutlets" : 0,
 																	"patching_rect" : [ -259.952759, 627.0, 54.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "ftm.print"
 																}
@@ -12918,7 +12813,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -13085,12 +12980,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-29",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 311.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 311.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[2]))" ]
+																	"text" : "_(abs ($1[2]))"
 																}
 
 															}
@@ -13215,12 +13110,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-21",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 195.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 195.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[1]))" ]
+																	"text" : "_(abs ($1[1]))"
 																}
 
 															}
@@ -13237,12 +13132,11 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-11",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
 																	"patching_rect" : [ 423.0, 364.0, 163.353516, 17.40625 ],
 																	"presentation_rect" : [ 423.0, 364.0, 163.353516, 17.40625 ],
-																	"text" : [ "_((sqrt (($1 sqrabs) sum )) / 3.)" ]
+																	"text" : "_((sqrt (($1 sqrabs) sum )) / 3.)"
 																}
 
 															}
@@ -13412,12 +13306,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-14",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 73.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 73.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[0]))" ]
+																	"text" : "_(abs ($1[0]))"
 																}
 
 															}
@@ -13788,7 +13682,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -13955,12 +13849,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-29",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 311.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 311.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[2]))" ]
+																	"text" : "_(abs ($1[2]))"
 																}
 
 															}
@@ -14085,12 +13979,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-21",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 195.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 195.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[1]))" ]
+																	"text" : "_(abs ($1[1]))"
 																}
 
 															}
@@ -14107,12 +14001,11 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-11",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
 																	"patching_rect" : [ 423.0, 364.0, 163.353516, 17.40625 ],
 																	"presentation_rect" : [ 423.0, 364.0, 163.353516, 17.40625 ],
-																	"text" : [ "_((sqrt (($1 sqrabs) sum )) / 3.)" ]
+																	"text" : "_((sqrt (($1 sqrabs) sum )) / 3.)"
 																}
 
 															}
@@ -14282,12 +14175,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-14",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 73.0, 79.0, 71.355469, 17.40625 ],
 																	"presentation_rect" : [ 73.0, 79.0, 71.355469, 17.40625 ],
-																	"text" : [ "_(abs ($1[0]))" ]
+																	"text" : "_(abs ($1[0]))"
 																}
 
 															}
@@ -14658,7 +14551,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -14747,14 +14640,9 @@
 																	"id" : "obj-11",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 3,
-																	"outlettype" : [ "", "", "" ],
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
 																	"patching_rect" : [ 65.0, 184.0, 57.0, 18.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.delta"
 																}
@@ -14875,7 +14763,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -14931,11 +14819,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 166.0, 294.0, 45.0, 22.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "ftm.list"
 																}
@@ -14982,12 +14865,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-14",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 3,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 73.0, 193.0, 66.691406, 18.0 ],
 																	"presentation_rect" : [ 73.0, 193.0, 66.691406, 17.40625 ],
-																	"text" : [ "_($1 mul $2)" ]
+																	"text" : "_($1 mul $2)"
 																}
 
 															}
@@ -15194,7 +15077,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -15283,14 +15166,9 @@
 																	"id" : "obj-11",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 3,
-																	"outlettype" : [ "", "", "" ],
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
 																	"patching_rect" : [ 65.0, 184.0, 57.0, 18.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.delta"
 																}
@@ -15399,7 +15277,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -15526,14 +15404,9 @@
 																	"fontsize" : 12.0,
 																	"id" : "obj-8",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 0,
 																	"numoutlets" : 0,
 																	"patching_rect" : [ -259.952759, 627.0, 54.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "ftm.print"
 																}
@@ -15716,12 +15589,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-71",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 373.0, 107.0, 48.807617, 17.0 ],
 													"presentation_rect" : [ 373.0, 107.0, 48.807617, 16.289062 ],
-													"text" : [ "_mode $1" ]
+													"text" : "_mode $1"
 												}
 
 											}
@@ -15791,11 +15664,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 219.0, 167.0, 240.0, 21.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "mnm.biqoefs @mode lowpass @f0 0.02 @q 1."
 												}
@@ -15829,12 +15697,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-64",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 279.0, 107.0, 27.40918, 17.0 ],
 													"presentation_rect" : [ 279.0, 107.0, 27.40918, 16.289062 ],
-													"text" : [ "_q $1" ]
+													"text" : "_q $1"
 												}
 
 											}
@@ -15896,12 +15764,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-69",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 279.0, 195.0, 29.842285, 17.0 ],
 													"presentation_rect" : [ 279.0, 195.0, 29.842285, 16.289062 ],
-													"text" : [ "_clear" ]
+													"text" : "_clear"
 												}
 
 											}
@@ -15918,12 +15786,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-70",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 219.0, 195.0, 47.583008, 17.0 ],
 													"presentation_rect" : [ 219.0, 195.0, 47.583008, 16.289062 ],
-													"text" : [ "_coefs $1" ]
+													"text" : "_coefs $1"
 												}
 
 											}
@@ -15940,12 +15808,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-72",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 219.0, 107.0, 30.46533, 17.0 ],
 													"presentation_rect" : [ 219.0, 107.0, 30.46533, 16.289062 ],
-													"text" : [ "_f0 $1" ]
+													"text" : "_f0 $1"
 												}
 
 											}
@@ -15971,14 +15839,9 @@
 													"id" : "obj-74",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 171.0, 235.0, 204.0, 21.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "mnm.biquad @dim stream"
 												}
@@ -16306,7 +16169,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -16937,7 +16800,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -17121,15 +16984,10 @@
 													"fontsize" : 12.0,
 													"id" : "obj-5",
 													"maxclass" : "newobj",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 73.0, 143.0, 81.0, 20.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "ftm.copy fvec"
 												}
@@ -17145,11 +17003,6 @@
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "", "" ],
 													"patching_rect" : [ 73.0, 185.0, 194.0, 20.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "mnm.minmax"
 												}
@@ -17394,7 +17247,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -17791,7 +17644,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -18153,7 +18006,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -18516,7 +18369,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -18590,12 +18443,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-1",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 126.0, 212.0, 132.017578, 17.40625 ],
 													"presentation_rect" : [ 126.0, 212.0, 132.017578, 17.40625 ],
-													"text" : [ "_(sqrt (($1 sqrabs) sum))" ]
+													"text" : "_(sqrt (($1 sqrabs) sum))"
 												}
 
 											}
@@ -18624,12 +18477,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-69",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 201.399963, 173.0, 132.017578, 17.40625 ],
 													"presentation_rect" : [ 201.399963, 173.0, 132.017578, 17.40625 ],
-													"text" : [ "_(sqrt (($1 sqrabs) sum))" ]
+													"text" : "_(sqrt (($1 sqrabs) sum))"
 												}
 
 											}
@@ -18640,14 +18493,9 @@
 													"id" : "obj-70",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 3,
-													"outlettype" : [ "", "", "" ],
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 126.0, 137.0, 169.799927, 20.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "mnm.delta"
 												}
@@ -18826,7 +18674,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -18949,12 +18797,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-14",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 109.0, 162.0, 132.017578, 17.40625 ],
 													"presentation_rect" : [ 109.0, 162.0, 132.017578, 17.40625 ],
-													"text" : [ "_(sqrt (($1 sqrabs) sum))" ]
+													"text" : "_(sqrt (($1 sqrabs) sum))"
 												}
 
 											}
@@ -18964,15 +18812,10 @@
 													"fontsize" : 12.0,
 													"id" : "obj-68",
 													"maxclass" : "newobj",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 109.0, 124.0, 81.0, 20.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
 													"style" : "",
 													"text" : "ftm.copy fmat"
 												}
@@ -19287,7 +19130,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -19327,7 +19170,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 73.0, 95.0, 57.0, 20.0 ],
+													"patching_rect" : [ 73.0, 95.0, 57.0, 22.0 ],
 													"style" : "",
 													"text" : "zl slice 3"
 												}
@@ -19339,15 +19182,10 @@
 													"fontsize" : 12.0,
 													"id" : "obj-7",
 													"maxclass" : "newobj",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 73.0, 142.0, 83.0, 20.0 ],
-													"saved_object_attributes" : 													{
-														"ftm_objref_conv" : 0,
-														"ftm_scope" : 0
-													}
-,
+													"patching_rect" : [ 73.0, 142.0, 83.0, 22.0 ],
 													"style" : "",
 													"text" : "ftm.copy fmat"
 												}
@@ -19366,12 +19204,12 @@
 													"ftm_scope" : 0,
 													"id" : "obj-8",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 2,
+													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 73.0, 184.0, 132.017578, 17.40625 ],
 													"presentation_rect" : [ 73.0, 184.0, 132.017578, 17.40625 ],
-													"text" : [ "_(sqrt (($1 sqrabs) sum))" ]
+													"text" : "_(sqrt (($1 sqrabs) sum))"
 												}
 
 											}
@@ -19514,7 +19352,7 @@
 											"major" : 7,
 											"minor" : 1,
 											"revision" : 0,
-											"architecture" : "x86",
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -19650,7 +19488,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -19779,14 +19617,9 @@
 																	"id" : "obj-36",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 795.0, 90.0, 314.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.mean @filtersize 2 @dim stream @outtype number"
 																}
@@ -19969,14 +19802,9 @@
 																	"id" : "obj-23",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 450.0, 90.0, 314.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.mean @filtersize 2 @dim stream @outtype number"
 																}
@@ -20180,12 +20008,12 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-21",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 960.0, 435.0, 60.703125, 17.40625 ],
 																	"presentation_rect" : [ 960.0, 435.0, 60.703125, 17.40625 ],
-																	"text" : [ "_size 200 3" ]
+																	"text" : "_size 200 3"
 																}
 
 															}
@@ -20195,9 +20023,8 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-19",
 																	"maxclass" : "ftm.vecdisplay",
-																	"numinlets" : 5,
-																	"numoutlets" : 6,
-																	"outlettype" : [ "", "", "", "", "", "" ],
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
 																	"patching_rect" : [ 960.0, 555.0, 256.0, 128.0 ]
 																}
 
@@ -20215,18 +20042,17 @@
 																	"ftm_scope" : 0,
 																	"id" : "obj-10",
 																	"maxclass" : "ftm.mess",
-																	"numinlets" : 2,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 960.0, 495.0, 246.527328, 17.40625 ],
 																	"presentation_rect" : [ 960.0, 495.0, 246.527328, 17.40625 ],
-																	"text" : [ "_((((($buffer set 0 0 $1) rotate -1) colref 0))/ 5.)" ]
+																	"text" : "_((((($buffer set 0 0 $1) rotate -1) colref 0))/ 5.)"
 																}
 
 															}
 , 															{
 																"box" : 																{
-																	"description" : "fmat 100 3",
 																	"editor_interface" : "",
 																	"fontface" : 0,
 																	"fontname" : "Arial",
@@ -20237,8 +20063,7 @@
 																	"maxclass" : "ftm.object",
 																	"name" : "buffer8",
 																	"numinlets" : 1,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"numoutlets" : 0,
 																	"patching_rect" : [ 960.0, 465.0, 114.962891, 19.40625 ],
 																	"persistence" : 0,
 																	"presentation_rect" : [ 960.0, 465.0, 114.962891, 19.40625 ],
@@ -20254,14 +20079,9 @@
 																	"id" : "obj-18",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 75.0, 90.0, 314.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.mean @filtersize 2 @dim stream @outtype number"
 																}
@@ -21087,7 +20907,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -21141,11 +20961,6 @@
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
 																	"patching_rect" : [ 50.0, 212.0, 149.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 0
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.meanstd @type list"
 																}
@@ -21400,7 +21215,7 @@
 															"major" : 7,
 															"minor" : 1,
 															"revision" : 0,
-															"architecture" : "x86",
+															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
@@ -21703,14 +21518,9 @@
 																	"id" : "obj-63",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 148.0, 167.0, 224.0, 20.0 ],
-																	"saved_object_attributes" : 																	{
-																		"ftm_objref_conv" : 0,
-																		"ftm_scope" : 2
-																	}
-,
 																	"style" : "",
 																	"text" : "mnm.median @filtersize 8 @dim stream"
 																}
@@ -23114,65 +22924,9 @@
 			}
 , 			{
 				"name" : "Meta2MO.maxpat",
-				"bootpath" : "~/Documents/Dev/MetaOSC/Max",
+				"bootpath" : "~/Documents/Dev/MetaWear/MetaOSC/Max",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "mnm.median.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.object.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.mess.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.absargs.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.meanstd.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.mean.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.vecdisplay.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.copy.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.delta.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.minmax.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.biquad.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mnm.biqoefs.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.print.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.list.mxo",
-				"type" : "iLaX"
 			}
 , 			{
 				"name" : "OSC-route.mxo",
