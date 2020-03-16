@@ -154,22 +154,6 @@
                     android:id="@+id/textView3"
                     android:layout_column="0" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Meta1"
-                    android:id="@+id/textView4"
-                    android:layout_column="1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Meta2"
-                    android:id="@+id/textView5"
-                    android:layout_column="2" />
-
             </TableRow>
 
 
@@ -201,25 +185,6 @@
                     android:id="@+id/textView13"
                     android:layout_column="0" />
 
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New ToggleButton"
-                    android:id="@+id/meta1Swi"
-                    android:layout_column="1"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:background="@color/colorPrimary" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="On"
-                    android:id="@+id/meta2Swi"
-                    android:layout_column="2"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:background="@color/colorPrimary" />
             </TableRow>
 
             <TableRow
@@ -248,25 +213,6 @@
                     android:id="@+id/textView6"
                     android:layout_column="0" />
 
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New ToggleButton"
-                    android:id="@+id/meta1Acc"
-                    android:layout_column="1"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:background="@color/colorPrimary" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="On"
-                    android:id="@+id/meta2Acc"
-                    android:layout_column="2"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:background="@color/colorPrimary" />
             </TableRow>
 
             <TableRow
@@ -294,25 +240,6 @@
                     android:id="@+id/textView7"
                     android:layout_column="0" />
 
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New ToggleButton"
-                    android:id="@+id/meta1Gyr"
-                    android:layout_column="1"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:background="@color/colorPrimary" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="On"
-                    android:id="@+id/meta2Gyr"
-                    android:layout_column="2"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:background="@color/colorPrimary" />
             </TableRow>
 
             <TableRow
@@ -340,25 +267,6 @@
                     android:id="@+id/textView8"
                     android:layout_column="0" />
 
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New ToggleButton"
-                    android:id="@+id/meta1Mag"
-                    android:layout_column="1"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:background="@color/colorPrimary" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="On"
-                    android:id="@+id/meta2Mag"
-                    android:layout_column="2"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:background="@color/colorPrimary" />
             </TableRow>
 
             <TableRow
@@ -386,25 +294,6 @@
                     android:id="@+id/textView9"
                     android:layout_column="0" />
 
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New ToggleButton"
-                    android:id="@+id/meta1Lig"
-                    android:layout_column="1"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:background="@color/colorPrimary" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="On"
-                    android:id="@+id/meta2Lig"
-                    android:layout_column="2"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:background="@color/colorPrimary" />
             </TableRow>
 
             <TableRow
@@ -432,25 +321,6 @@
                     android:id="@+id/textView10"
                     android:layout_column="0" />
 
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New ToggleButton"
-                    android:id="@+id/meta1Tmp"
-                    android:layout_column="1"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:background="@color/colorPrimary" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="On"
-                    android:id="@+id/meta2Tmp"
-                    android:layout_column="2"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:background="@color/colorPrimary" />
             </TableRow>
 
             <TableRow
@@ -478,25 +348,6 @@
                     android:id="@+id/textView11"
                     android:layout_column="0" />
 
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New ToggleButton"
-                    android:id="@+id/meta1Bar"
-                    android:layout_column="1"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:background="@color/colorPrimary" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="On"
-                    android:id="@+id/meta2Bar"
-                    android:layout_column="2"
-                    android:checked="false"
-                    android:textColor="@android:color/holo_blue_dark"
-                    android:background="@color/colorPrimary" />
             </TableRow>
 
             <TableRow

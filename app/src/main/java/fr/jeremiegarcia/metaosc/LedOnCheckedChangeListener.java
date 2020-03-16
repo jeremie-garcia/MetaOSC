@@ -9,14 +9,14 @@ import com.mbientlab.metawear.module.Led;
 /**
  * Created by jgarcia on 31/03/16.
  */
-public class LedOnCkeckedChangeListener implements CompoundButton.OnCheckedChangeListener {
+public class LedOnCheckedChangeListener implements CompoundButton.OnCheckedChangeListener {
 
     MetaWearBoard board;
     Led.ColorChannel channel;
     Led ledModule = null;
 
 
-    public LedOnCkeckedChangeListener(MetaWearBoard mwBoard, Led.ColorChannel colorChannel) {
+    public LedOnCheckedChangeListener(MetaWearBoard mwBoard, Led.ColorChannel colorChannel) {
         this.board = mwBoard;
         this.channel = colorChannel;
     }

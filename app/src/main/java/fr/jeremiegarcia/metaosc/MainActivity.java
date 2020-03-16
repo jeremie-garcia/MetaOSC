@@ -6,7 +6,6 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
@@ -18,7 +17,6 @@ import android.text.Editable;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -26,7 +24,6 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.illposed.osc.OSCMessage;
@@ -137,8 +134,8 @@ public class MainActivity extends AppCompatActivity implements ServiceConnection
         CheckBox ledChkBx1 = (CheckBox) findViewById( R.id.meta1Led );
         CheckBox ledChkBx2 = (CheckBox) findViewById( R.id.meta2Led );
 
-        ledChkBx1.setOnCheckedChangeListener(new LedOnCkeckedChangeListener(mwBoard1, Led.ColorChannel.GREEN));
-        ledChkBx2.setOnCheckedChangeListener(new LedOnCkeckedChangeListener(mwBoard2, Led.ColorChannel.BLUE));
+        ledChkBx1.setOnCheckedChangeListener(new LedOnCheckedChangeListener(mwBoard1, Led.ColorChannel.GREEN));
+        ledChkBx2.setOnCheckedChangeListener(new LedOnCheckedChangeListener(mwBoard2, Led.ColorChannel.BLUE));
 
     }
 
